@@ -83,7 +83,7 @@
 
 .hover_effect {
   transition: 0.3s;
-  opacity: 0.6;
+  opacity: 5;
   border-radius: 30px;
 }
 
