@@ -82,9 +82,9 @@
 }
 
 .hover_effect {
-  transition: 0.3s;
   opacity: 5;
   border-radius: 30px;
+  transition: 0.3s cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 
 @-webkit-keyframes slide-top {
