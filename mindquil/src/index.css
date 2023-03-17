@@ -82,9 +82,29 @@
 }
 
 .hover_effect {
+  transition: 0.3s;
   opacity: 5;
   border-radius: 30px;
-  transition: 0.3s cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#fff, #fff);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease-in-out;
+}
+
+.link-underline-green {
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(rgb(0, 128, 0), rgb(0, 128, 0));
+}
+
+.link-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%;
 }
 
 @-webkit-keyframes slide-top {
