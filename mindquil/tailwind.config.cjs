@@ -10,6 +10,7 @@ module.exports = {
         white: 'rgb(255, 255, 255)',
         limeGreen: 'rgb(0, 128, 0)',
         darkGreen: 'rgb(2, 20, 2)',
+        offwhite: '#faf9f6',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
