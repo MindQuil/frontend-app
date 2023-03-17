@@ -29,7 +29,7 @@ const Navbar = () => {
                 ? 'py-2 px-6 text-white bg-limeGreen rounded-[20px] outline-none hover:font-medium'
                 : `text-white link link-underline link-underline-green`
             }
-            ${index === navButtons.length - 1 ? 'mr-0' : 'mr-11'}`}
+            ${index === navButtons.length - 1 ? 'mr-0 ml-6' : 'mr-6 ml-6'}`}
           >
             <li key={nav.id} onClick={() => setActive(nav.title)}>
               <a href={`#${nav.id}`}>{nav.title}</a>{' '}
