@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../style';
 import { useState } from 'react';
 
 import { menuOpen, logoX, menuClose } from '../assets';
@@ -11,8 +12,13 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   // Desktop Nav bar
   return (
-    <nav className='w-full flex py-12 justify-between items-center'>
-      <img src={logoX} alt='mindquil' className='w-[200px] h-[45px]' />
+    <nav className='w-full flex py-12 justify-between items-center pb-[20px] '>
+      <img
+        src={logoX}
+        alt='mindquil'
+        className='w-[200px] h-[45px] cursor-pointer'
+        id='home'
+      />
 
       <ul className='list-none sm:flex hidden justify-end items-center flex-1 '>
         {navButtons.map((nav, index) => (
@@ -21,7 +27,7 @@ const Navbar = () => {
             className={`font-poppins font-normal cursor-pointer text-[20px] ${
               active === nav.title
                 ? 'py-2 px-6 text-white bg-limeGreen rounded-[20px] outline-none hover:font-medium'
-                : 'text-white hover:text-limeGreen hover_effect'
+                : `text-white link link-underline link-underline-green`
             }
             ${index === navButtons.length - 1 ? 'mr-0' : 'mr-11'}`}
           >
@@ -35,7 +41,7 @@ const Navbar = () => {
         <img
           src={toggle ? menuClose : menuOpen}
           alt='menu'
-          className='w-[28px] h-[28px] object-contain'
+          className='w-[28px] h-[28px] object-contain cursor-pointer'
           onClick={() => setToggle(!toggle)}
         />
 
@@ -50,8 +56,8 @@ const Navbar = () => {
                 key={nav.id}
                 className={`font-poppins font-medium cursor-pointer text-[16px] ${
                   active === nav.title
-                    ? 'text-white bg-limeGreen px-6 rounded-[20px]'
-                    : 'text-white hover:text-limeGreen px-6 hover_effect'
+                    ? 'text-white bg-limeGreen px-4 rounded-[20px]'
+                    : 'text-white link link-underline link-underline-green px-4 hover_effect'
                 } ${index === navButtons.length - 1 ? 'mb-0' : 'mb-4'}`}
                 onClick={() => setActive(nav.title)}
               >
