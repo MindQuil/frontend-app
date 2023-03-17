@@ -13,12 +13,14 @@ const Navbar = () => {
   // Desktop Nav bar
   return (
     <nav className='w-full flex py-12 justify-between items-center pb-[20px] '>
-      <img
-        src={logoX}
-        alt='mindquil'
-        className='w-[200px] h-[45px] cursor-pointer'
-        id='home'
-      />
+      <a href='#home'>
+        <img
+          src={logoX}
+          alt='mindquil'
+          className='w-[200px] h-[45px] cursor-pointer'
+          id='home'
+        />
+      </a>
 
       <ul className='list-none sm:flex hidden justify-end items-center flex-1 '>
         {navButtons.map((nav, index) => (
@@ -26,7 +28,7 @@ const Navbar = () => {
             type='button'
             className={`font-poppins font-normal cursor-pointer text-[20px] ${
               active === nav.title
-                ? 'py-2 px-6 text-white bg-limeGreen rounded-[20px] outline-none hover:font-medium'
+                ? 'py-1 px-4 text-white bg-limeGreen rounded-[20px] outline-none hover:font-medium'
                 : `text-white link link-underline link-underline-green`
             }
             ${index === navButtons.length - 1 ? 'mr-0 ml-6' : 'mr-6 ml-6'}`}
