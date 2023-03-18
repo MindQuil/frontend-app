@@ -8,7 +8,7 @@ module.exports = {
         primary: '#000000',
         secondary: '#32de84',
         white: 'rgb(255, 255, 255)',
-        limeGreen: 'rgb(0, 128, 0)',
+        limeGreen: '#00dd72',
         darkGreen: 'rgb(2, 20, 2)',
         offwhite: '#faf9f6',
       },

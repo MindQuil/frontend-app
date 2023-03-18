@@ -5,11 +5,11 @@
 @tailwind utilities;
 
 :root {
-  --black-gradient: linear-gradient(
+  --green-gradient: linear-gradient(
     144.39deg,
     #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #11101d 91.61%
+    #53e28f -78.47%,
+    #77dd99 91.61%
   );
   --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
@@ -99,7 +99,7 @@
 
 .link-underline-green {
   background-image: linear-gradient(transparent, transparent),
-    linear-gradient(rgb(0, 128, 0), rgb(0, 128, 0));
+    linear-gradient(#00dd72, #00dd72);
 }
 
 .link-underline:hover {
@@ -130,7 +130,7 @@
 }
 
 .feature-card:hover {
-  background: var(--black-gradient);
+  background: var(--green-gradient);
   box-shadow: var(--card-shadow);
 }
 
@@ -143,11 +143,11 @@
 }
 
 .feedback-card:hover {
-  background: var(--black-gradient);
+  background: var(--green-gradient);
 }
 
-.blue__gradient {
-  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+.white__gradient {
+  background: linear-gradient(180deg, red 0%, green 100%);
   filter: blur(123px);
 }
 
