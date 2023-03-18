@@ -39,7 +39,7 @@ const Hero = () => (
       />
     </div>
     <div className='sm:flex hidden absolute left-[50%] translate-x-[-50%] bottom-5 '>
-      <a href='userStory'>
+      <a href='#userStory'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           fill='none'
