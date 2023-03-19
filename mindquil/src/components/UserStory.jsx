@@ -5,7 +5,7 @@ import StoryCard from './StoryCard';
 
 const UserStory = () => (
   <section
-    className={`sm:py-6 py-6 ${styles.flexCenter} flex-col  border-t-solid border-t-[4px] rounded-t-3xl shadow-2xl mb-6 px-2 h-auto w-auto`}
+    className={`bg-white sm:py-6 py-6 ${styles.flexCenter} flex-col  border-t-solid border-t-[4px] rounded-t-3xl shadow-2xl mb-6 px-2 h-auto w-auto`}
   >
     <div className='absolute z-[0] w-[60%] h-[50%] rounded-full white__gradient bottom-30' />
 

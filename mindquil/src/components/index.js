@@ -6,5 +6,16 @@ import Button from './Button';
 import StoryCard from './StoryCard';
 import Blank from './Avatar';
 import Logo from './Logo';
+import Newsletter from './Newsletter';
 
-export { Navbar, Hero, Services, UserStory, Button, StoryCard, Blank, Logo };
+export {
+  Navbar,
+  Hero,
+  Services,
+  UserStory,
+  Button,
+  StoryCard,
+  Blank,
+  Logo,
+  Newsletter,
+};
