@@ -6,6 +6,7 @@ import people01 from './people01.jpg';
 import people02 from './people02.jpg';
 import people03 from './people03.jpg';
 import quotes from './quote.svg';
+import user from './user.png';
 
 export {
   logoX,
@@ -16,4 +17,5 @@ export {
   people02,
   people03,
   quotes,
+  user,
 };
