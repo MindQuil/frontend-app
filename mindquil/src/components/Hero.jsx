@@ -3,11 +3,18 @@ import { mental } from '../assets';
 import styles from '../style';
 import Button from './Button';
 
+const content = 'Get immediate Help';
+const use = 'signUp';
+
 const Hero = () => (
   <section
     id='home'
-    className={`flex sm:flex-row flex-col sm:px-5 px-1 sm:mb-20 mb-0`}
+    className={`flex sm:flex-row flex-col-reverse sm:px-5 px-1 sm:mb-20 mb-0`}
   >
+    <div className={`sm:hidden flex  ${styles.flexCenter} animate-bounce z-10`}>
+      <Button content={content} use={use} />
+    </div>
+
     <div
       className={`flex flex-2 shrink-[2] justify-center items-start  flex-col xl:px-0 sm:px-16 px-6`}
     >
@@ -21,13 +28,13 @@ const Hero = () => (
           <span className='text-limeGreen'>th </span>
           <span>Today!</span>
         </h1>
-        <h5 className={`${styles.paragraph} py-12 sm:pr-40 pr-20`}>
+        <h5 className={`${styles.paragraph} py-12 sm:pr-28 pr-20`}>
           <span className='font-bold text-white'>MindQuil</span> is a
           user-friendly web app, designed to help people manage anxiety, stress,
           and depression.
         </h5>
         <div className={`sm:flex hidden ${styles.flexButton}`}>
-          <Button />
+          <Button content={content} use={use} />
         </div>
       </div>
     </div>
@@ -38,7 +45,7 @@ const Hero = () => (
       <img
         src={mental}
         alt='mental'
-        className='flex-1 bg-cover w-[50vw] shrink-0  sm:rounded-none rounded-b-full'
+        className='flex-none bg-cover sm:w-[50vw] sm:h-fit h-[70vh] shrink-0  '
       />
     </div>
     <div className='sm:flex hidden absolute left-[50%] translate-x-[-50%] bottom-5'>
@@ -58,11 +65,6 @@ const Hero = () => (
           />
         </svg>
       </a>
-    </div>
-    <div
-      className={`sm:hidden flex absolute left-[32%] translate-x-[-50%] bottom-[-20%] ${styles.flexCenter} animate-bounce z-10`}
-    >
-      <Button />
     </div>
   </section>
 );

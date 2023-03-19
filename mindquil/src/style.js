@@ -6,6 +6,10 @@ const styles = {
   paragraph:
     'font-poppins font-normal text-offwhite text-[18px] leading-[20.8px] w-5%',
 
+  newsletter: 'font poppins font-bold text-[28px]',
+  button:
+    'py-2  px-6 mt-4 mb-6  font-poppins font-medium text-[18px] text-white bg-limeGreen rounded-[20px] outline-none hover:opacity-80 hover:font-medium',
+
   flexCenter: 'flex justify-center items-center',
   flexStart: 'flex justify-center items-start',
   flexButton: 'flex justify-start items-start',

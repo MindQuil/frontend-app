@@ -1,14 +1,23 @@
 import React from 'react';
+import styles from '../style';
 
-const Button = ({ styles }) => (
-  <a href='#signUp'>
-    <button
-      type='button'
-      className={`${styles} py-2  px-6 mt-4 mb-6  font-poppins font-medium text-[18px] text-white bg-limeGreen rounded-[20px] outline-none hover:opacity-80 hover:font-medium`}
-    >
-      Get Immediate Help
-    </button>
-  </a>
-);
+const Button = ({ style, content, use }) => {
+  if (content === 'Sign Up') {
+    return (
+      <a href={`#${use}`}>
+        <button type='button' className={`${style} ${styles.button}`}>
+          Sign&nbsp;Up
+        </button>
+      </a>
+    );
+  }
+  return (
+    <a href={`#${use}`}>
+      <button type='button' className={`${style} ${styles.button}`}>
+        {content}
+      </button>
+    </a>
+  );
+};
 
 export default Button;
