@@ -4,6 +4,7 @@ import Services from './Services';
 import UserStory from './UserStory';
 import Button from './Button';
 import StoryCard from './StoryCard';
-import Blank from './Blank';
+import Blank from './UserImg';
+import Logo from './Logo';
 
-export { Navbar, Hero, Services, UserStory, Button, StoryCard, Blank };
+export { Navbar, Hero, Services, UserStory, Button, StoryCard, Blank, Logo };

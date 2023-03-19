@@ -6,7 +6,7 @@ import Button from './Button';
 const Hero = () => (
   <section
     id='home'
-    className={`flex sm:flex-row flex-col sm:px-5 px-1 sm:mb-10 mb-0`}
+    className={`flex sm:flex-row flex-col sm:px-5 px-1 sm:mb-20 mb-0`}
   >
     <div
       className={`flex flex-2 shrink-[2] justify-center items-start  flex-col xl:px-0 sm:px-16 px-6`}
@@ -31,14 +31,17 @@ const Hero = () => (
         </div>
       </div>
     </div>
+
+    {/* image */}
+
     <div className={`${styles.flexCenter}`}>
       <img
         src={mental}
         alt='mental'
-        className='flex-1 bg-cover w-[50vw] shrink-0'
+        className='flex-1 bg-cover w-[50vw] shrink-0  sm:rounded-none rounded-b-full'
       />
     </div>
-    <div className='sm:flex hidden absolute left-[50%] translate-x-[-50%] bottom-5 '>
+    <div className='sm:flex hidden absolute left-[50%] translate-x-[-50%] bottom-5'>
       <a href='#userStory'>
         <svg
           xmlns='http://www.w3.org/2000/svg'

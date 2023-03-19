@@ -12,7 +12,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   // Desktop Nav bar
   return (
-    <nav className='w-full flex py-12 justify-between items-center pb-[20px] '>
+    <nav className='sticky top-0 z-50 w-full flex py-12 justify-between items-center pb-[20px]'>
       <a href='#home'>
         <img
           src={logoX}
