@@ -14,27 +14,25 @@ const About = () => (
     <div
       className={`bg-limeGreen sm:h-[83vh] sm:flex-row flex-col-reverse py-6 ${styles.paddingX} flex justify-start items-center`}
     >
-      <div
-        className={`${styles.boxWidth} justify-between flex-1 m-[-15px] p-0`}
-      >
+      <div className={`${styles.boxWidth} justify-between flex-1 m-[-5px] p-0`}>
         <h1 className='sm:flex hidden text-white ml-0 text-[60px] justify-center items-center font-extrabold write-mode transform rotate-180 mt-[-32px]'>
           About&nbsp;Us
         </h1>
       </div>
       <div className='flex-col justify-between sm:max-w-[42vw] max-w-[90%] mr-2 shrink-1 sm:pl-0'>
         {aboutUs.map((about) => (
-          <p className='text-primary mb-10 text-[18px]'>
+          <p className={`text-primary mb-8 text-[20px] sm:leading-7`}>
             <span className='font-extrabold'>Mindquil </span>
             {about.content}
           </p>
         ))}
       </div>
-      <div className='flex sm:mr-[-120px] mr-[10px] \'>
+      <div className='flex sm:mr-[-120px] mr-[10px] ml-[50px] \'>
         {' '}
         <img
           src={aboutImg}
           alt='aboutImg'
-          className='min-w-[100%] sm:h-[80vh] h-[60vh] sm:mt-auto mt-[-70px]'
+          className='min-w-[100%] sm:h-[90vh] h-[60vh] sm:mt-auto mt-[-70px]'
         />
       </div>
 
