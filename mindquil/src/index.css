@@ -146,6 +146,10 @@
   background: var(--green-gradient);
 }
 
+.write-mode {
+  writing-mode: vertical-rl;
+}
+
 .white__gradient {
   background: linear-gradient(180deg, red 0%, green 100%);
   filter: blur(123px);
