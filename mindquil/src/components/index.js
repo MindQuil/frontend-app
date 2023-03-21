@@ -8,7 +8,7 @@ import Blank from './Avatar';
 import Logo from './Logo';
 import Newsletter from './Newsletter';
 import LandingPage from './LandingPage';
-import About from './About';
+import About from '../routes/About';
 
 export {
   Navbar,

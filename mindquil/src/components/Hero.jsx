@@ -8,7 +8,6 @@ const use = 'signUp';
 
 const Hero = () => (
   <section
-    id='home'
     className={`flex sm:flex-row flex-col-reverse sm:px-5 px-1 sm:mb-20 mb-0`}
   >
     <div className={`sm:hidden flex  ${styles.flexCenter} animate-bounce z-10`}>
