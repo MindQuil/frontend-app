@@ -7,13 +7,13 @@ import { navButtons } from '../constants';
 
 // Navigation bar
 
-const Navbar = () => {
-  const [active, setActive] = useState('Home');
+const Navbar = ({ state }) => {
+  const [active, setActive] = useState(state);
   const [toggle, setToggle] = useState(false);
   // Desktop Nav bar
   return (
     <nav className='sticky top-0 z-50 w-full flex py-12 justify-between items-center pb-[20px]'>
-      <a href='#home'>
+      <a href='home'>
         <img
           src={logoX}
           alt='mindquil'
@@ -34,7 +34,7 @@ const Navbar = () => {
             ${index === navButtons.length - 1 ? 'mr-0 ml-6' : 'mr-6 ml-6'}`}
           >
             <li key={nav.id} onClick={() => setActive(nav.title)}>
-              <a href={`#${nav.id}`}>{nav.title}</a>{' '}
+              <a href={`${nav.id}`}>{nav.title}</a>{' '}
             </li>
           </button>
         ))}
@@ -63,7 +63,7 @@ const Navbar = () => {
                 } ${index === navButtons.length - 1 ? 'mb-0' : 'mb-4'}`}
                 onClick={() => setActive(nav.title)}
               >
-                <a href={`#${nav.id}`}>{nav.title}</a>
+                <a href={`${nav.id}`}>{nav.title}</a>
               </li>
             ))}
           </ul>
