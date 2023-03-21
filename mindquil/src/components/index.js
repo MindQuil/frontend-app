@@ -7,6 +7,8 @@ import StoryCard from './StoryCard';
 import Blank from './Avatar';
 import Logo from './Logo';
 import Newsletter from './Newsletter';
+import LandingPage from './LandingPage';
+import About from './About';
 
 export {
   Navbar,
@@ -18,4 +20,6 @@ export {
   Blank,
   Logo,
   Newsletter,
+  LandingPage,
+  About,
 };
