@@ -26,4 +26,13 @@ export const layout = {
   section: `flex md:flex-row flex-col ${styles.paddingY}`,
 };
 
+export const register = {
+  valid: 'text-white ml-[0.25rem]',
+  invalid: 'text-red ml-[0.25rem]',
+  info: 'font-[0.75rem] rounded-lg bg-primary text-white p-[0.25rem] relative bottom-[-10px]',
+  offscreen: 'absolute left-[-9999px]',
+  inputC:
+    'text-white border-solid rounded-xl border-white border-2 bg-insuGreen focus:ring-3 focus:ring-lime-800 p-[6px] w-[20rem] mb-[10px]',
+};
+
 export default styles;

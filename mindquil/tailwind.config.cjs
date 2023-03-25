@@ -5,15 +5,20 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#000000',
+        primary: '#090707',
         secondary: '#32de84',
         white: 'rgb(255, 255, 255)',
         limeGreen: '#00dd72',
         darkGreen: 'rgb(2, 20, 2)',
         offwhite: '#faf9f6',
+        suGreen: '#090707',
+        insuGreen: '#01ce6b',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
+      },
+      backgroundImage: {
+        'sign-up': "url('./src/assets/signupBkg.png')",
       },
     },
     screens: {
