@@ -12,7 +12,7 @@ module.exports = {
         darkGreen: 'rgb(2, 20, 2)',
         offwhite: '#faf9f6',
         suGreen: '#090707',
-        insuGreen: '#01ce6b',
+        shamrockGreen: '#009e60',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
