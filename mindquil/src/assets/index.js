@@ -8,6 +8,8 @@ import people03 from './people03.jpg';
 import quotes from './quote.svg';
 import user from './user.png';
 import aboutImg from './aboutImg.png';
+import signupImg from './signupBkg.png';
+import ErrorImg from './ErrorImg.svg';
 
 export {
   logoX,
@@ -20,4 +22,6 @@ export {
   quotes,
   user,
   aboutImg,
+  signupImg,
+  ErrorImg,
 };
