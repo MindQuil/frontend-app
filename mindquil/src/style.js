@@ -10,6 +10,9 @@ const styles = {
   button:
     'py-2  px-6 mt-4 mb-6  font-poppins font-medium text-[18px] text-white bg-limeGreen rounded-[20px] outline-none hover:opacity-80 hover:font-medium',
 
+  button2:
+    'py-2  px-6 mt-4 mb-6  font-poppins font-medium text-[18px] text-white bg-limeGreen rounded-[20px] outline-none',
+
   flexCenter: 'flex justify-center items-center',
   flexStart: 'flex justify-center items-start',
   flexButton: 'flex justify-start items-start',
@@ -32,7 +35,7 @@ export const register = {
   info: 'font-[0.75rem] rounded-lg bg-primary text-white p-[0.25rem] relative bottom-[-10px]',
   offscreen: 'absolute left-[-9999px]',
   inputC:
-    'text-white border-solid rounded-xl border-white border-2 bg-insuGreen focus:ring-3 focus:ring-lime-800 p-[6px] w-[20rem] mb-[10px]',
+    'text-white border-solid rounded-xl border-white border-2 bg-shamrockGreen focus:ring-3 focus:ring-lime-800 p-[6px] w-[20rem] mb-[10px]',
 };
 
 export default styles;

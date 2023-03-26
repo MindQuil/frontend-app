@@ -4,7 +4,7 @@ import styles from '../style';
 const Button = ({ style, content, use }) => {
   if (content === 'Sign Up') {
     return (
-      <a href={`#${use}`}>
+      <a href={`${use}`}>
         <button type='button' className={`${style} ${styles.button}`}>
           Sign&nbsp;Up
         </button>
@@ -12,7 +12,7 @@ const Button = ({ style, content, use }) => {
     );
   }
   return (
-    <a href={`#${use}`}>
+    <a href={`${use}`}>
       <button type='button' className={`${style} ${styles.button}`}>
         {content}
       </button>
