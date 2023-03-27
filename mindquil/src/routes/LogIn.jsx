@@ -106,7 +106,9 @@ const Login = ({ successMsg }) => {
           </div>
 
           <div className='text-center'>
-            <p className='mt-8'>----------------- or ----------------- </p>
+            <p className='mt-8'>
+              -----------------&nbsp;or&nbsp;-----------------{' '}
+            </p>
             <p className='mt-8'>
               Create{' '}
               <a href='signUp' className='hover:text-limeGreen hover:underline'>
