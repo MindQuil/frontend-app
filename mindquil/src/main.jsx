@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { About, App, Register, Error, Login } from './routes';
+import { About, App, Register, Error, Login, MindQuil } from './routes';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
@@ -27,6 +27,11 @@ const router = createBrowserRouter([
   {
     path: 'login',
     element: <Login />,
+  },
+
+  {
+    path: 'mindQuil',
+    element: <MindQuil />,
   },
 ]);
 
