@@ -61,7 +61,7 @@ const router = createBrowserRouter([
           {
             index: true,
             path: 'bookSession',
-            element: <Session />,
+            element: <Error />,
           },
           {
             index: true,

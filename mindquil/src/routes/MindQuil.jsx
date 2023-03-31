@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import {
   HomeFilled,
   CalendarFilled,
@@ -35,8 +35,8 @@ const MindQuil = ({ user }) => {
             <div className='logo'></div>
           </div>
           <div
-            className='bg-limeGreen  overflow-hidden
-            min-h-screen  pt-[2rem] leading-[10rem]'
+            className='bg-limeGreen overflow-hidden
+            min-h-screen  pt-[0.5rem] leading-[5rem] items-center'
           >
             {' '}
             <a href='/mindQuil/updateProfile' className='relative block'>
@@ -47,25 +47,52 @@ const MindQuil = ({ user }) => {
               />
               <span className='absolute w-3 h-3 transform -translate-x-1/2 bg-green-500 border-2 border-white rounded-full left-1/2 -bottom-2'></span>
             </a>
-            <a href={navpages[i++]}>
-              <Menu
-                theme='light'
-                className='bg-limeGreen font-bold text-[1.2rem]'
-                mode='inline'
-                defaultSelectedKeys={['0']}
-                items={[
-                  HomeFilled,
-                  CalendarFilled,
-                  AudioFilled,
-                  TeamOutlined,
-                  MessageFilled,
-                ].map((icon, index) => ({
-                  key: String(index),
-                  icon: React.createElement(icon),
-                  label: `${buttonName[index]}`,
-                }))}
-              />
-            </a>
+            {/* <Menu
+              theme='light'
+              className='bg-limeGreen font-bold text-[1.2rem]'
+              mode='inline'
+              defaultSelectedKeys={['0']}
+              items={[
+                HomeFilled,
+                CalendarFilled,
+                AudioFilled,
+                TeamOutlined,
+                MessageFilled,
+              ].map((icon, index) => ({
+                key: String(index),
+                icon: React.createElement(icon),
+                label: `${buttonName[index]}`,
+              }))}
+            ></Menu> */}
+            <div className='bg-limeGreen font-bold text-[1.2rem] flex flex-col justify-center items-center text-white '>
+              <a href='/mindQuil/feeds' className='items-center ant-d'>
+                <HomeFilled
+                  className='mr-3 items-center text-primary'
+                  default={true}
+                />
+                Home
+              </a>
+              <a href='/mindQuil/bookSession' className='ant-d w-fit'>
+                <CalendarFilled className='mr-3 items-center text-primary ant-d' />
+                Sessions
+              </a>{' '}
+              <a href='/mindQuil/podcast' className='ant-d w-fit'>
+                <AudioFilled className='mr-3 items-center text-primary ant-d' />
+                Podcasts
+              </a>{' '}
+              <a href='/mindQuil/group' className='ant-d w-fit'>
+                <TeamOutlined className='mr-3 items-center text-primary ant-d' />
+                Groups
+              </a>{' '}
+              <a href='/mindQuil/chat' className='ant-d w-fit'>
+                <MessageFilled className='mr-3 items-center text-primary ' />
+                Messages
+              </a>
+            </div>
+            <LogoutOutlined
+              className='bg-limeGreen flex justify-center font-bold text-[1.2rem] pt-10'
+              onClick={signout}
+            />
           </div>
         </Sider>
         <div

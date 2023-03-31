@@ -176,3 +176,8 @@
 .deco {
   text-decoration: underline #00dd72;
 }
+
+.ant-d:hover {
+  box-shadow: 0 0 #11101d;
+  color: #11101d;
+}
