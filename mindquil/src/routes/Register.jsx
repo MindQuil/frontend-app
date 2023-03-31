@@ -84,9 +84,6 @@ const Register = () => {
           password: `${pwd}`,
         })
         .then((response) => {
-          console.log(response.data);
-          console.log(JSON.stringify(response.data));
-          console.log(JSON.stringify(response.status));
           setSuccessMsg('Registration successful.\nLog in to continue');
           setSuccess(true);
 

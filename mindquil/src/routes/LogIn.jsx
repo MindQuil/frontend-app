@@ -3,13 +3,19 @@ import { register } from '../style';
 import { signupImg } from '../assets';
 import styles from '../style';
 import api from '../api/axios';
+import { Navigate } from 'react-router-dom';
 import MindQuil from './MindQuil';
+import useAuth from '../api/useAuth';
 
 const LOGIN_URL = '/auth/login';
+// const accessToken = '';
 
 const Login = ({ successMsg }) => {
   const errRef = useRef();
 
+  //   const { setAuth } = useAuth;
+
+  //   const [Auth, setAuth] = useState('')
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
@@ -17,6 +23,8 @@ const Login = ({ successMsg }) => {
 
   const [errMsg, setErrMsg] = useState('');
   const [success, setSuccess] = useState(false);
+
+  const [userID, setUserID] = useState('');
 
   useEffect(() => {
     setErrMsg('');
@@ -32,14 +40,16 @@ const Login = ({ successMsg }) => {
         password,
       })
       .then((response) => {
-        console.log(response.data);
-        console.log(JSON.stringify(response.data));
-        console.log(JSON.stringify(response.status));
-        setSuccess(true);
+        const accessToken = response.data.token;
+        const userId = response.data.user;
+        localStorage.clear();
+        localStorage.setItem('token', accessToken);
+        setUserID({ userId });
 
         //clear state and inputs data
         setEmail('');
         setPassword('');
+        setSuccess(true);
       })
       .catch((error) => {
         if (error.response.status === 400) {
@@ -67,7 +77,7 @@ const Login = ({ successMsg }) => {
   return (
     <>
       {success ? (
-        <MindQuil />
+        <MindQuil user={userID} />
       ) : (
         <section
           className={`flex sm:flex-row overflow-hidden sm:px-5 px-1  bg-suGreen text-white h-screen font-poppins`}
