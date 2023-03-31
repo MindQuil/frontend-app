@@ -10,6 +10,7 @@ import user from './user.png';
 import aboutImg from './aboutImg.png';
 import signupImg from './signupBkg.png';
 import ErrorImg from './ErrorImg.svg';
+import background from './background.jpg';
 
 export {
   logoX,
@@ -24,4 +25,5 @@ export {
   aboutImg,
   signupImg,
   ErrorImg,
+  background,
 };
