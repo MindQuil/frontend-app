@@ -8,6 +8,7 @@ import Blank from './Avatar';
 import Logo from './Logo';
 import Newsletter from './Newsletter';
 import About from '../routes/About';
+import sessionCard from './sessionCard';
 
 export {
   Navbar,
@@ -20,4 +21,5 @@ export {
   Logo,
   Newsletter,
   About,
+  sessionCard,
 };

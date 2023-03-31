@@ -45,6 +45,54 @@ export const feedback = [
   },
 ];
 
+export const session = [
+  {
+    id: '01',
+    name: 'John Timbolo',
+    headline: 'Award winning therapist',
+    articles: '35',
+    followers: '890',
+    Ratings: '7.6',
+    img: people01,
+  },
+  {
+    id: '02',
+    name: 'Alimah Lukman',
+    headline: 'Best Therapist of the year',
+    articles: '75',
+    followers: '8.6k',
+    Ratings: '8.6',
+    img: people01,
+  },
+  {
+    id: '03',
+    name: 'John Timbolo',
+    headline: 'Award winning therapist',
+    articles: '35',
+    followers: '890',
+    Ratings: '2.6',
+    img: people01,
+  },
+  {
+    id: '04',
+    name: 'John Timbolo',
+    headline: 'Award winning therapist',
+    articles: '35',
+    followers: '890',
+    Ratings: '2.6',
+    img: people01,
+  },
+  {
+    id: '05',
+    name: 'John Timbolo',
+    headline: 'Award winning therapist',
+    articles: '35',
+    followers: '890',
+    Ratings: '2.6',
+    img: people01,
+  },
+];
+
 export const aboutUs = [
   {
     id: 'about-01',
@@ -54,5 +102,20 @@ export const aboutUs = [
   {
     id: 'about-02',
     content: `provides access to mental health professionals who can offer virtual therapy sessions to users. Users can also connect with other individuals who are going through similar challenges through the web app's support group.`,
+  },
+];
+
+export const songsdata = [
+  {
+    title: 'The Power of No - Linda Sambisa',
+    url: 'https://521dimensions.com/song/FirstSnow-Emancipator.mp3',
+  },
+  {
+    title: 'Linked Brown - Tranquil',
+    url: 'https://beardbarnmusicbucket.s3.amazonaws.com/The+Wild+Horse',
+  },
+  {
+    title: 'Almond Tatsi - Peaceful Soul',
+    url: 'https://beardbarnmusicbucket.s3.amazonaws.com/The+Wild+Horse',
   },
 ];
